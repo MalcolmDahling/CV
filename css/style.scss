@@ -1,0 +1,61 @@
+/*
+Project Root
+    |---CSS
+        |---style.scss
+        |---_main.scss
+        |---_normalize.scss
+*/
+
+
+
+
+@import '_boilerplate_normalize.scss'; //makes the site look the same in all web browsers.
+@import '_boilerplate_main.scss'; //boilerplate stuff.
+@import '_main.scss';
+@import '_header.scss';
+
+body{
+    background-color:#313133;
+    background-image:url("../img/background.webp");
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+
+    *{
+        box-sizing:border-box;
+    }
+}
+
+
+.backgroundOverlay{ //makes the background-image darker.
+    width:100%; height:100%;
+    position:fixed; top:0px;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index:1;
+}
+
+
+p, h1, h2, h3, h4, h5, h6{
+    color:#ffffff;
+}
+    
+
+.wrapper{ //contains all content
+    margin:auto;
+    margin-top:2%;
+    z-index:2;
+    padding:2%;
+    width:100%;
+    max-width:800px; //100% width on smaller screens but not too wide on large screens.
+    position:relative;
+}
+
+
+
+
+
+
+
+
+

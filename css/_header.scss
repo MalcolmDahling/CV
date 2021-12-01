@@ -1,0 +1,63 @@
+header{
+    text-align:center;
+    margin:auto;
+
+    .profilePic{
+        width:200px;
+        margin:auto;
+        border:2px solid #ffffff;
+        box-shadow:3px 3px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    h1, h2{
+        margin:0px;
+        margin-top:10px;
+    }
+
+    nav{
+        height:fit-content;
+        margin-top:10px;
+        cursor:default;
+
+        ul{
+            list-style-type:none; //removes list-dots.
+            display:inline-block;
+            margin:0px;
+            padding:0px;
+
+            li{
+                float:left; //display:inline; creates white-space between buttons.
+                margin:0px;
+
+                a{
+                    display:inline-block;
+                    width:50px;
+                    height:50px;
+                    margin-left:5px;
+                    margin-right:5px;
+                    border:2px solid #ffffff;
+                    padding:5px;
+                    box-shadow:3px 3px 3px rgba(0, 0, 0, 0.25);
+
+                    img{
+                        object-fit:none; //crops the image.
+                        width:36px;
+                        height:36px;
+                    }
+
+                    .icon0{
+                        object-position:0px 0px; //sets the position from which to draw the image in the spritesheet.
+                    }
+
+                    .icon1{
+                        object-position:-36px 0px;
+                    }
+                }
+
+                a:hover{
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+}
