@@ -23,6 +23,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-3.11.2.min.js" defer></script>
+    <script src="js/plugins.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 
@@ -30,9 +34,9 @@
 
 
 <body>
-    <div class="backgroundOverlay"></div>
+    <div id="backgroundOverlay"></div>
 
-    <div class="wrapper">
+    <div id="wrapper">
 
 
         <!--########################################-->
@@ -55,8 +59,15 @@
                             <img src="img/icons/icons_36x36.webp" class="icon1" alt="LinkedIn">
                         </a>
                     </li>
+                    <li>
+                        <a href="https://github.com/MalcolmDahling/" aria-label="GitHub">
+                            <img src="img/icons/icons_36x36.webp" class="icon2" alt="GitHub">
+                        </a>
+                    </li>
                 </ul>
             </nav>
+
+            <strong><a href="#" id="viewRepos">Click to view my public repositories on GitHub!</a></strong>
         </header>
         <!--########################################-->
         <!--################ HEADER ################-->
@@ -125,11 +136,6 @@
 
 
     
-
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
         window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
