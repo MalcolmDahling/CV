@@ -17,12 +17,12 @@ document.getElementById('viewRepos').addEventListener('click', function(){
     function fetchRepos(data){
         for(let i = 0; i < data.length; i++){
 
-
-
             document.getElementById('reposDiv').insertAdjacentHTML('beforeend', `
-            <a href="` + data[i].html_url + `"`
-            + (data[i].description && data[i].description.includes('Extra övning') ? `class="extra"` : null)+`>`
-            + (data[i].description == null ? data[i].name : data[i].description)+`</a>`);
+                <a href="` + data[i].html_url + `"`
+                + (data[i].description && data[i].description.includes('Extra övning') ? `class="extra"` : null)+`>`
+                + (data[i].description == null ? data[i].name : data[i].description)+`</a>
+            `);
+
         }
     }
 
@@ -36,4 +36,25 @@ document.getElementById('viewRepos').addEventListener('click', function(){
 function reposDivRemove(){
     document.getElementById('reposDiv').remove();
     document.getElementById('backgroundOverlay2').remove();
+}
+
+
+
+
+
+
+
+
+let headerIcons = document.getElementsByClassName('headerIcon');
+
+for(let i = 0; i < headerIcons.length; i++){
+    headerIcons[i].addEventListener('mouseenter', function(event){
+        event.target.insertAdjacentHTML('beforeend', '<div id="iconOverlay"></div>');
+    });
+}
+
+for(let i = 0; i < headerIcons.length; i++){
+    headerIcons[i].addEventListener('mouseleave', function(event){
+        document.getElementById('iconOverlay').remove();
+    });
 }
