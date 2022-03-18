@@ -22,7 +22,6 @@ document.getElementById('viewRepos').addEventListener('click', function(){
                 + (data[i].description && data[i].description.includes('Extra övning') ? `class="extra"` : null)+`>`
                 + (data[i].description == null ? data[i].name : data[i].description)+`</a>
             `);
-
         }
     }
 
