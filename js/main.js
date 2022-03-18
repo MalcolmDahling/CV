@@ -9,7 +9,7 @@ document.getElementById('viewRepos').addEventListener('click', function(){
 
 
 
-    fetch('https://api.github.com/users/MalcolmDahling/repos')
+    fetch('https://api.github.com/users/MalcolmDahling/repos?per_page=100')
         .then(response => response.json())
         .then(data => fetchRepos(data));
 
